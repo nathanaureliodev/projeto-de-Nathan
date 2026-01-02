@@ -152,3 +152,14 @@ footer {
   font-size: 14px;
   padding: 24px 0;
 }
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bgpreto.png);
+  }
+
+  .light {
+    --bg-url: url(./assets/bgbranco.png);
+  }
+}
