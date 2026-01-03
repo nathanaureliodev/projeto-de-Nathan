@@ -6,22 +6,22 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(/img/bg-mobile.jpg);
+  --bg-url: url("img/bg-mobile.jpg");
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.15);
   --surface-color-hover: rgba(255, 255, 255, 0.35);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(/img/moon-stars.svg);
+  --switch-bg-url: url("img/moon-stars.svg");
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(/img/bg-mobile-light.jpg);
+  --bg-url: url("img/bg-mobile-light.jpg");
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.25);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(/img/sun.svg);
+  --switch-bg-url: url("img/sun.svg");
 }
 
 body {
@@ -82,8 +82,13 @@ body * {
   animation: slide-in 0.4s forwards;
 }
 
+<<<<<<< HEAD
 #switch button :hover {
   outline: 1px solid var(--text-color);
+=======
+#switch button:hover {
+  outline: 8px solid var(--text-color);
+>>>>>>> b6f78a783d8dbc6ed387d068567cbac4e616864a
 }
 
 #switch span {
@@ -97,11 +102,9 @@ body * {
 }
 
 /*links*/
-
 ul {
   list-style: none;
   display: flex;
-
   flex-direction: column;
   gap: 16px;
 }
@@ -110,27 +113,22 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 24px;
-
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   text-decoration: none;
   font-weight: 500;
-
   transition: background 0.2s;
 }
-/*pseudo selector hover*/
 
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
+
 /*link icons*/
 #social-links {
   display: flex;
@@ -160,11 +158,11 @@ footer {
 /*media queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(/img/bgpreto.png);
+    --bg-url: url("img/bgpreto.png");
   }
 
   .light {
-    --bg-url: url(/img/bgbranco.png);
+    --bg-url: url("img/bgbranco.png");
   }
 }
 
@@ -185,3 +183,4 @@ footer {
     left: 0%;
   }
 }
+
