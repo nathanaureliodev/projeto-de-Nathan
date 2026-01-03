@@ -10,7 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.15);
   --surface-color-hover: rgba(255, 255, 255, 0.35);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(255, 255, 0.2);
   --switch-bg-url: url("img/moon-stars.svg");
 }
 
@@ -40,7 +40,7 @@ body * {
   padding: 0 24px;
 }
 
-/*profile section*/
+/* profile section */
 #profile {
   text-align: center;
   padding: 24px;
@@ -82,8 +82,10 @@ body * {
   animation: slide-in 0.4s forwards;
 }
 
+ /* com borda */ 
 #switch button:hover {
-  cursor: pointer; /* sem borda */
+  outline: 1px solid var(--text-color);
+  
 }
 
 #switch span {
@@ -96,7 +98,7 @@ body * {
   border-radius: 9999px;
 }
 
-/*links*/
+/* links */
 ul {
   list-style: none;
   display: flex;
@@ -124,7 +126,7 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
-/*link icons*/
+/* link icons */
 #social-links {
   display: flex;
   justify-content: center;
@@ -136,3 +138,48 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background-color: var(--highlight-color);
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url("img/bgpreto.png");
+  }
+
+  .light {
+    --bg-url: url("img/bgbranco.png");
+  }
+}
+
+/* animations */
+@keyframes slide-in {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50px;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50px;
+  }
+  to {
+    left: 0%;
+  }
+}
