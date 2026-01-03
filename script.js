@@ -10,7 +10,7 @@ function togglemode() {
     //se estiver light mode,adicionar a imagem light//
     img.setAttribute("src", "img/macaco_laranja-circular.png")
   } else {
-    //se estiver sem o light mode,manter a imagem normal//
+    //se estiver sem o light mode,mantenha a imagem normal//
     img.setAttribute("src", "img/imagem_cortada_circular.png")
   }
 }

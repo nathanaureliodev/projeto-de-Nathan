@@ -82,13 +82,8 @@ body * {
   animation: slide-in 0.4s forwards;
 }
 
-<<<<<<< HEAD
-#switch button :hover {
-  outline: 1px solid var(--text-color);
-=======
 #switch button:hover {
-  outline: 8px solid var(--text-color);
->>>>>>> b6f78a783d8dbc6ed387d068567cbac4e616864a
+  outline: 2px solid var(--text-color);
 }
 
 #switch span {
@@ -183,4 +178,3 @@ footer {
     left: 0%;
   }
 }
-
