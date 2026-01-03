@@ -8,9 +8,9 @@ function togglemode() {
   //substituir a imagem//
   if (html.classList.contains("light")) {
     //se estiver light mode,adicionar a imagem light//
-    img.setAttribute("src", "./macaco_laranja-circular.png")
+    img.setAttribute("src", "/img/macaco_laranja-circular.png")
   } else {
     //se estiver sem o light mode,manter a imagem normal//
-    img.setAttribute("src", "./imagem_cortada_circular.png")
+    img.setAttribute("src", "/img/imagem_cortada_circular.png")
   }
 }
