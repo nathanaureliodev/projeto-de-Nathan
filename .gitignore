@@ -1,0 +1,20 @@
+# Ignorar configurações locais do VS Code
+.vscode/
+
+# Ignorar arquivos temporários e logs
+*.log
+*.tmp
+
+# Ignorar binários e builds que não fazem parte do site
+Engine/
+Binaries/
+extensions/
+assets/
+*.exe
+*.dll
+*.mpk
+*.mpkinfo
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
