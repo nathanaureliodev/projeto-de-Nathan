@@ -58,12 +58,12 @@ body * {
 
 /* switch */
 #switch {
-  border: 0px solid rgb(0, 0, 0);
   position: relative;
   width: 64px;
   height: 32px;
   margin: 0 auto 32px;
 }
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -82,8 +82,9 @@ body * {
   animation: slide-in 0.4s forwards;
 }
 
-#switch button :hover {
-  outline: 1px solid var(--text-color);
+#switch button:hover {
+  cursor: pointer; /* sem borda */
+}
 
 #switch span {
   display: block;
@@ -130,51 +131,8 @@ ul li a:hover {
   padding: 24px 0;
   font-size: 24px;
 }
+
 #social-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
-  transition: background 0.2s;
-  border-radius: 50%;
-}
-#social-links a:hover {
-  background-color: var(--highlight-color);
-  padding: 16px;
-}
-
-footer {
-  text-align: center;
-  font-size: 14px;
-  padding: 24px 0;
-}
-
-/*media queries*/
-@media (min-width: 700px) {
-  :root {
-    --bg-url: url("img/bgpreto.png");
-  }
-
-  .light {
-    --bg-url: url("img/bgbranco.png");
-  }
-}
-
-/*animations*/
-@keyframes slide-in {
-  from {
-    left: 0%;
-  }
-  to {
-    left: 50px;
-  }
-}
-@keyframes slide-back {
-  from {
-    left: 50px;
-  }
-  to {
-    left: 0%;
-  }
-}
-
