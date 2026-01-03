@@ -83,7 +83,7 @@ body * {
 }
 
 #switch button :hover {
-  outline: 8px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
 
 #switch span {
